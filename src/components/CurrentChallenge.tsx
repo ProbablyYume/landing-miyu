@@ -38,6 +38,7 @@ export default function CurrentChallenge() {
           />
         </div>
       </div>
+      <h3 className="next-challenge-title">{t.currentChallenge.nextChallenge}</h3>
     </section>
   );
 }

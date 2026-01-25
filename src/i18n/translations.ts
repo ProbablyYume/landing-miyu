@@ -15,6 +15,7 @@ export interface Translations {
     subtitle: string;
     description: string;
     ctaButton: string;
+    nextChallenge: string;
   };
   about: {
     sectionTitle: string;
@@ -54,6 +55,7 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'No Hit - Level 1 - All Bosses (207) + DLC',
       description: 'La run la plus difficile de ma vie de joueuse. Battre chaque boss possédant une barre de vie dans le jeu de base et le DLC, au niveau 1, sans subir un seul coup.',
       ctaButton: 'Voir le challenge en live',
+      nextChallenge: 'Prochain Challenge : Dark Souls 2 - All Bosses (42) Level One - Club Only',
     },
     about: {
       sectionTitle: 'Qui suis-je',
@@ -91,6 +93,7 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'No Hit - Level 1 - All Bosses (207) + DLC',
       description: 'The most difficult run of my gaming life. Defeating every boss with a health bar in the base game and DLC, at level 1, without taking a single hit.',
       ctaButton: 'Watch the challenge live',
+      nextChallenge: 'Next Challenge: Dark Souls 2 - All Bosses (42) Level One - Club Only',
     },
     about: {
       sectionTitle: 'About Me',
@@ -128,6 +131,7 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'No Hit - Level 1 - All Bosses (207) + DLC',
       description: 'La run la más difícil de mi vida de jugadora. Batir cada jefe poseyendo una barra de vida en el juego base y el DLC, al nivel 1, sin sufrir un solo golpe.',
       ctaButton: 'Ver el desafío en vivo',
+      nextChallenge: 'Próximo Desafío: Dark Souls 2 - All Bosses (42) Level One - Club Only',
     },
     about: {
       sectionTitle: 'Quién soy',
