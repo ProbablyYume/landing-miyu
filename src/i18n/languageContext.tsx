@@ -35,12 +35,21 @@ function getBrowserLanguage(): Language {
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>(() => getBrowserLanguage());
+  const [language, setLanguage] = useState<Language>('fr');
+  const [isClient, setIsClient] = useState(false);
 
+  // Initialize language on client side only
+  useEffect(() => {
+    setIsClient(true);
+    const initialLang = getBrowserLanguage();
+    setLanguage(initialLang);
+  }, []);
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang);
-    localStorage.setItem('language', lang);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('language', lang);
+    }
   };
 
   return (
