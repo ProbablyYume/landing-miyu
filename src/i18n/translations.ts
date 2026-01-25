@@ -52,7 +52,7 @@ export const translations: Record<Language, Translations> = {
       sectionTitle: 'Challenge en cours',
       title: 'Elden Ring',
       subtitle: 'No Hit - Level 1 - All Bosses (207) + DLC',
-      description: 'La run la plus difficile de ma vie de joueuse. Battre chaque boss possédant une barre de vie dans le jeu et le DLC, au niveau 1, sans subir un seul coup.',
+      description: 'La run la plus difficile de ma vie de joueuse. Battre chaque boss possédant une barre de vie dans le jeu de base et le DLC, au niveau 1, sans subir un seul coup.',
       ctaButton: 'Voir le challenge en live',
     },
     about: {
@@ -89,7 +89,7 @@ export const translations: Record<Language, Translations> = {
       sectionTitle: 'Current Challenge',
       title: 'Elden Ring',
       subtitle: 'No Hit - Level 1 - All Bosses (207) + DLC',
-      description: 'The most difficult run of my gaming life. Defeating every boss with a health bar in the game and DLC, at level 1, without taking a single hit.',
+      description: 'The most difficult run of my gaming life. Defeating every boss with a health bar in the base game and DLC, at level 1, without taking a single hit.',
       ctaButton: 'Watch the challenge live',
     },
     about: {
@@ -126,7 +126,7 @@ export const translations: Record<Language, Translations> = {
       sectionTitle: 'Desafío actual',
       title: 'Elden Ring',
       subtitle: 'No Hit - Level 1 - All Bosses (207) + DLC',
-      description: 'La run la más difícil de mi vida de jugadora. Batir cada jefe poseyendo una barra de vida en el juego y el DLC, al nivel 1, sin sufrir un solo golpe.',
+      description: 'La run la más difícil de mi vida de jugadora. Batir cada jefe poseyendo una barra de vida en el juego base y el DLC, al nivel 1, sin sufrir un solo golpe.',
       ctaButton: 'Ver el desafío en vivo',
     },
     about: {
