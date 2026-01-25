@@ -1,0 +1,81 @@
+Ce fichier contient les instructions de génération du projet. Il te faudra garder en mémoire chaque ligne de ce fichier, et appliquer les principes de programmation qui y sont mentionnés à toute étape de la génération du projet. 
+
+Ce projet sera un site web statique, qui servira de landing page à la streameuse et challenge-runneuse MiyuValkyrie. 
+L'objectif de cette page sera de présenter son contenu, son challenge en cours sur son stream, et rediriger vers ses réseaux sociaux. 
+
+Le site sera une seule page, avec un contenu 100% statique, ou chaque section sera dans l'ordre dans lequel elles seront décrites plus bas. 
+
+Niveau qualité de code, respectes ces principes : 
+
+- Chaque section dans son propre fichier, afin de séparer chaque élément dans l'arborescence du projet
+- Code clean
+- Fichiers de traduction (le site devra être disponible en anglais, français, et espagnol latinoaméricain)
+- Aucun texte en "dur" dans le code 
+- Commentaires et noms de variables/méthodes strictement en anglais
+- Minimisation des dépendances
+- Responsive design
+- fichiers CSS aussi bien découpés que les sections
+- Un aspect front très moderne et épuré, avec des petits effets de hover sur certains contenus
+
+Un dossier medias est présent dans le répertoire du projet, avec deux fichiers qu'il te faudra utiliser quand demandé plus bas dans les instructions. 
+
+Structure du site : 
+
+Généralités : 
+
+- Thème sombre, nuances proches du noir, avec des effets de dorure, similaire à l'effet que tu peux voir sur le texte contenu dans le fichier medias/boucle_hero.mp4. Il faudrait aussi des effets qui évoquent des "braises rougeoyantes" à quelques endroits un peu aléatoire pour décorer le fond du site.
+- Pas de cassure nette de couleur au niveau des sections, le scroll doit être seamless
+- Texte en blanc (pas #FFF, plus sombre pour éviter la gêne occulaire de l'utilisateur), avec certains éléments dorés (comme des soulignements, quelques décorations de texte, etc)
+
+1. Hero page 
+
+    1.1 : Utilise le fichier vidéo boucle_hero.mp4 en background de la section hero. Il doit remplir l'écran, tant en hauteur qu'en largeur, avec un "zoom" si le format n'est pas parfaitement 16/9. Pas besoin de l'afficher sur mobile. Au niveau de son affichage, j'imaginais un fade-in depuis la couleur de background jusqu'à faire apparaître la vidéo, après une demie seconde d'attente avant le début de l'animation. Durée de l'animation 1s. Puis boucle continue du fichier vidéo. Aucun contrôle affiché, aucune action possible sur le fichier, il doit jouer perpétuellement en background. 
+    1.2 : Le fichier vidéo contient déjà du texte disant "MiyuValkyrie". Base toi sur la position de ce texte pour afficher plus de contenu en dessous, disant "Streamer Twitch /n Challenge-Runner /n No-Hitter", puis avoir un bouton CTA amenant vers sa chaîne Twitch (https://twitch.tv/miyuvalkyrie). Couleur du bouton du même violet que Twitch, avec icône Twitch à gauche, puis "Ma chaîne". 
+
+2. Challenge en cours (section en deux colonnes)
+
+    2.1 : Colonne gauche - Texte décrivant le challenge en cours : 
+        2.1.1 : Titre : Elden Ring
+        2.1.2 : Sous titre : No Hit - Level 1 - All Bosses (207) + DLC
+        2.1.3 : Description : La run la plus difficile de ma vie de joueuse. Battre chaque boss possédant une barre de vie dans le jeu et le DLC, au niveau 1, sans subir un seul coup.
+
+    2.2 : Colonne droite - Intégration vidéo YouTube : https://www.youtube.com/embed/2hPudk9WFws?si=_dmKRDQh5Kjp99pk
+
+3. Qui suis-je (section en deux colonnes)
+
+    3.1 : Colonne gauche - Photo de profil, utilises le media photo_profil 
+    3.2 : Colonne droite - Description : "¡Hola! 😊 Soy Miyu, una streamer de Colombia.
+Mi contenido está enfocado en retos y No-Hit. También me encanta completar juegos al 100% y obtener su platino.
+
+Siempre he creído que los videojuegos son más que entretenimiento. Son historias, desafíos y refugios que nos enseñan a resistir, levantarnos y avanzar.
+
+Este canal nació como un punto de encuentro, un lugar donde podamos aprender, compartir desafíos y crecer juntos. Aquí, cada logro es un esfuerzo compartido, y cada caída, una oportunidad para levantarnos más fuertes."
+    (Je t'ai mis la description en espagnol, traduis la évidemment dans les deux autres langues, et utilises celle ci telle quelle pour la traduction espagnole)
+
+4. Mes autres challenges 
+
+    Pour cette section, je te laisse me suggérer une présentation qui serait optimale niveau UI/UX et qui pourrait être "jolie" dans le standards actuels : 
+    - Elden Ring - All Bosses + DLC (207) Level One - Club Only (World first) : https://www.youtube.com/watch?v=sFwpbE02qM8
+    - Hollow Knight - Five pantheons : https://www.youtube.com/watch?v=QwWl9TgkqsQ
+    - Dark Souls - All Bosses (26) Level One - Club Only : https://www.youtube.com/watch?v=Muvw3ZJdE_A
+    - Elden Ring - No-Hit Any% (Patch 1.09.1) : https://www.youtube.com/watch?v=0mqPb57FjDs
+    - Elden Ring - No-Hit Any% RL1 (Patch 1.10) : https://www.youtube.com/watch?v=dx5xjIJLNg8
+    - Dark Souls - No-Hit Any% : https://www.youtube.com/watch?v=6WVvXjgQ6ig
+
+5. Mes réseaux : 
+
+    Pour cette section, je voyais bien de grands boutons parfaitement carrés, en noir et blanc, qui prennent couleur avec un effet de "zoom" au hover, avec seulement le logo du réseau social dedans : 
+    - Twitch (on le remet ici pour maximiser les chances de clic sur le CTA, sauf si suggestion contraire : https://twitch.tv/miyuvalkyrie
+    - YouTube : https://www.youtube.com/@MiyuValkyrie
+    - Steam : https://steamcommunity.com/id/miyuvalkyrie/
+    - Instagram : https://www.instagram.com/miyuvalkyrie/
+    - X (Twitter) : https://x.com/MiyuValkyrie
+    - Discord : https://discord.com/invite/CX5wXNZ (à moins qu'on fasse une section à part entière pour le discord)
+    - TikTok : https://www.tiktok.com/@miyuvalkyrie
+    - Facebook : https://www.facebook.com/lmiyuvalkyrie/
+
+6. Footer avec éléments de navigation pour remonter dans chaque section, puis une petite signature de ma part : "ProbablyYume© de France avec ❤️"
+
+Génère chaque section individuellement, et teste son fonctionnement. Je te laisse choisir la techno la plus adaptée pour une page statique de ce genre, avec beaucoup d'éléments CSS interactif, des intégrations YouTube etc (je pensais à React/Astro, mais si tu as une meilleure suggestion, tu peux lancer.)
+
+Ne t'arrête que lorsque tout fonctionne exactement comme décrit dans le fichier. 

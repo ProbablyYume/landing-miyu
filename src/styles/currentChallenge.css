@@ -1,0 +1,108 @@
+.current-challenge-section {
+  padding: 8rem 2rem;
+  width: 100%;
+  background: transparent;
+}
+
+.section-title {
+  color: #d4af37;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto 4rem auto;
+  max-width: 1200px;
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.current-challenge-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.current-challenge-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.challenge-title {
+  color: #d4af37;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.challenge-subtitle {
+  color: #e5e5e5;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.challenge-description {
+  color: #d0d0d0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.current-challenge-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.youtube-embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 968px) {
+  .current-challenge-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .challenge-title {
+    font-size: 2.5rem;
+  }
+
+  .challenge-subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .current-challenge-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .challenge-title {
+    font-size: 2rem;
+  }
+
+  .challenge-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .challenge-description {
+    font-size: 1rem;
+  }
+}

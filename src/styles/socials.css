@@ -1,0 +1,154 @@
+.socials-section {
+  padding: 8rem 2rem;
+  width: 100%;
+  background: transparent;
+}
+
+.socials-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.socials-title {
+  color: #d4af37;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 4rem 0;
+  text-align: center;
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.socials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1920px) {
+  .socials-grid {
+    max-width: 1200px;
+    gap: 3rem;
+  }
+}
+
+.social-button {
+  aspect-ratio: 1;
+  width: 100%;
+  background-color: rgba(10, 10, 10, 0.4);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: var(--social-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+  z-index: 0;
+}
+
+.social-button:hover::before {
+  width: 200%;
+  height: 200%;
+}
+
+.social-button:hover {
+  transform: scale(1.1);
+  background-color: #0a0a0a;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-color: var(--social-color);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.social-icon {
+  width: 64px;
+  height: 64px;
+  color: #e5e5e5;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.social-icon-custom {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.social-icon-custom svg {
+  width: 100%;
+  height: 100%;
+  color: #e5e5e5;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+@media (min-width: 1920px) {
+  .social-icon,
+  .social-icon-custom {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.social-button:hover .social-icon,
+.social-button:hover .social-icon-custom svg {
+  color: white;
+  transform: scale(1.1);
+}
+
+@media (max-width: 968px) {
+  .socials-grid {
+    gap: 1.5rem;
+  }
+
+  .social-icon,
+  .social-icon-custom {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .socials-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .socials-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .socials-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .social-icon,
+  .social-icon-custom {
+    width: 36px;
+    height: 36px;
+  }
+}
