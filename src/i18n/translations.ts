@@ -22,6 +22,8 @@ export interface Translations {
   };
   otherChallenges: {
     title: string;
+    noHitRuns: string;
+    otherChallenges: string;
     watchOnYouTube: string;
   };
   socials: {
@@ -59,6 +61,8 @@ export const translations: Record<Language, Translations> = {
     },
     otherChallenges: {
       title: 'Mes autres challenges',
+      noHitRuns: 'No-hit runs',
+      otherChallenges: 'Autres challenges',
       watchOnYouTube: 'Voir sur YouTube →',
     },
     socials: {
@@ -94,6 +98,8 @@ export const translations: Record<Language, Translations> = {
     },
     otherChallenges: {
       title: 'My other challenges',
+      noHitRuns: 'No-hit runs',
+      otherChallenges: 'Other challenges',
       watchOnYouTube: 'Watch on YouTube →',
     },
     socials: {
@@ -129,6 +135,8 @@ export const translations: Record<Language, Translations> = {
     },
     otherChallenges: {
       title: 'Mis otros desafíos',
+      noHitRuns: 'No-hit runs',
+      otherChallenges: 'Otros desafíos',
       watchOnYouTube: 'Ver en YouTube →',
     },
     socials: {

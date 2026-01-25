@@ -41,34 +41,63 @@ export default function OtherChallenges() {
     return `https://www.youtube.com/embed/${videoId}`;
   };
 
+  // Separate challenges into categories
+  const noHitRuns = challenges.filter((challenge) =>
+    challenge.title.toLowerCase().includes('no-hit')
+  );
+  const otherChallengesList = challenges.filter(
+    (challenge) => !challenge.title.toLowerCase().includes('no-hit')
+  );
+
+  const renderChallengeCard = (challenge: Challenge, index: number) => (
+    <div key={index} className="challenge-card">
+      <div className="challenge-card-video">
+        <iframe
+          src={getYouTubeEmbedUrl(challenge.url)}
+          title={challenge.title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="challenge-youtube-embed"
+        />
+      </div>
+      <h3 className="challenge-card-title">{challenge.title}</h3>
+      <a
+        href={challenge.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="challenge-card-link"
+      >
+        {t.otherChallenges.watchOnYouTube}
+      </a>
+    </div>
+  );
+
   return (
     <section id="other-challenges" className="other-challenges-section">
       <div className="other-challenges-container">
         <h2 className="other-challenges-title">{t.otherChallenges.title}</h2>
-        <div className="challenges-grid">
-          {challenges.map((challenge, index) => (
-            <div key={index} className="challenge-card">
-              <div className="challenge-card-video">
-                <iframe
-                  src={getYouTubeEmbedUrl(challenge.url)}
-                  title={challenge.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="challenge-youtube-embed"
-                />
-              </div>
-              <h3 className="challenge-card-title">{challenge.title}</h3>
-              <a
-                href={challenge.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="challenge-card-link"
-              >
-                {t.otherChallenges.watchOnYouTube}
-              </a>
+        
+        {/* No-hit runs category */}
+        {noHitRuns.length > 0 && (
+          <div className="challenges-category">
+            <h3 className="challenges-category-title">{t.otherChallenges.noHitRuns}</h3>
+            <div className="challenges-grid">
+              {noHitRuns.map((challenge, index) => renderChallengeCard(challenge, index))}
             </div>
-          ))}
-        </div>
+          </div>
+        )}
+
+        {/* Other challenges category */}
+        {otherChallengesList.length > 0 && (
+          <div className="challenges-category">
+            <h3 className="challenges-category-title">{t.otherChallenges.otherChallenges}</h3>
+            <div className="challenges-grid">
+              {otherChallengesList.map((challenge, index) =>
+                renderChallengeCard(challenge, noHitRuns.length + index)
+              )}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

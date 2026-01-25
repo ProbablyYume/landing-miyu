@@ -18,6 +18,23 @@
   text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
 }
 
+.challenges-category {
+  margin-bottom: 4rem;
+}
+
+.challenges-category:last-child {
+  margin-bottom: 0;
+}
+
+.challenges-category-title {
+  color: #d4af37;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 2rem 0;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
 .challenges-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -83,6 +100,15 @@
   .other-challenges-title {
     font-size: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .challenges-category {
+    margin-bottom: 3rem;
+  }
+
+  .challenges-category-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .challenges-grid {
