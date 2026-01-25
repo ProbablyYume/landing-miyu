@@ -51,6 +51,34 @@
   margin: 0;
 }
 
+.challenge-cta-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background-color: #9146ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(145, 70, 255, 0.3);
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+.challenge-cta-button:hover {
+  background-color: #772ce8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(145, 70, 255, 0.5);
+}
+
+.challenge-cta-button .twitch-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .current-challenge-video {
   position: relative;
   width: 100%;
