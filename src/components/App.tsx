@@ -3,7 +3,6 @@ import Hero from './Hero';
 import CurrentChallenge from './CurrentChallenge';
 import About from './About';
 import OtherChallenges from './OtherChallenges';
-import Socials from './Socials';
 import Footer from './Footer';
 import LanguageSelector from './LanguageSelector';
 import SectionDivider from './SectionDivider';
@@ -20,7 +19,6 @@ export default function App() {
       <SectionDivider />
       <OtherChallenges />
       <SectionDivider />
-      <Socials />
       <Footer />
     </LanguageProvider>
   );
