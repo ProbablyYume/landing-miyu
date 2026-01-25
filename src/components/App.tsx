@@ -14,9 +14,9 @@ export default function App() {
       <LanguageSelector />
       <Hero />
       <SectionDivider />
-      <CurrentChallenge />
-      <SectionDivider />
       <About />
+      <SectionDivider />
+      <CurrentChallenge />
       <SectionDivider />
       <OtherChallenges />
       <SectionDivider />
