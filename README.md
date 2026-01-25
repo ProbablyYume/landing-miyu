@@ -68,6 +68,12 @@ Les fichiers statiques seront générés dans le dossier `dist/`
 npm run preview
 ```
 
+## Déploiement
+
+Le site est automatiquement déployé sur GitHub Pages via GitHub Actions à chaque push sur la branche `main`.
+
+Le workflow de déploiement est configuré dans `.github/workflows/deploy.yml`.
+
 ## Fonctionnalités
 
 - ✅ Section Hero avec vidéo en background
