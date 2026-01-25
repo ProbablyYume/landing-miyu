@@ -10,7 +10,7 @@ export default function About() {
       <div className="about-container">
         <div className="about-image-container">
           <img
-            src="/medias/photo_profil.jpg"
+            src={`${import.meta.env.BASE_URL}medias/photo_profil.jpg`}
             alt="MiyuValkyrie"
             className="about-image"
           />

@@ -14,7 +14,7 @@ export default function Hero() {
           muted
           playsInline
         >
-          <source src="/medias/boucle_hero.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}medias/boucle_hero.mp4`} type="video/mp4" />
         </video>
       </div>
       <div className="hero-content">
