@@ -13,7 +13,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 // Detect browser language
 function getBrowserLanguage(): Language {
-  if (typeof window === 'undefined') return 'fr';
+  if (typeof window === 'undefined') return 'es';
   
   // Check localStorage first
   const savedLang = localStorage.getItem('language') as Language | null;
@@ -22,7 +22,7 @@ function getBrowserLanguage(): Language {
   }
   
   // Otherwise detect from browser
-  const browserLang = navigator.language || (navigator.languages && navigator.languages[0]) || 'fr';
+  const browserLang = navigator.language || (navigator.languages && navigator.languages[0]) || 'es';
   const langCode = browserLang.split('-')[0].toLowerCase();
   
   // Map browser language to supported languages
@@ -30,12 +30,12 @@ function getBrowserLanguage(): Language {
   if (langCode === 'en') return 'en';
   if (langCode === 'es') return 'es';
   
-  // Default to French if not supported
-  return 'fr';
+  // Default to Spanish if not supported
+  return 'es';
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>('fr');
+  const [language, setLanguage] = useState<Language>('es');
   const [isClient, setIsClient] = useState(false);
 
   // Initialize language on client side only
