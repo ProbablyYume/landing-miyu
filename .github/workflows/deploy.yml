@@ -25,6 +25,10 @@ jobs:
         run: |
           git lfs install
           git lfs pull
+      - name: Verify LFS files
+        run: |
+          ls -lh public/medias/boucle_hero_gif.gif || echo "GIF file not found"
+          file public/medias/boucle_hero_gif.gif || echo "Cannot check file type"
       - name: Install, build, and upload your site
         uses: withastro/action@v2
         # with:
