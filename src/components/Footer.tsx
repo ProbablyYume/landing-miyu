@@ -13,10 +13,9 @@ export default function Footer() {
 
   const footerNavItems = [
     { id: 'hero', key: 'home' as const },
-    { id: 'current-challenge', key: 'currentChallenge' as const },
     { id: 'about', key: 'about' as const },
+    { id: 'current-challenge', key: 'currentChallenge' as const },
     { id: 'other-challenges', key: 'otherChallenges' as const },
-    { id: 'socials', key: 'socials' as const },
   ];
 
   return (
