@@ -28,7 +28,8 @@
   font-size: 1rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
+  transform: translateZ(0);
   position: relative;
 }
 
@@ -40,7 +41,8 @@
   width: 0;
   height: 2px;
   background-color: #d4af37;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
+  transform: translateZ(0);
   transform: translateX(-50%);
 }
 

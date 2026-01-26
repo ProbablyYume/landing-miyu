@@ -3,19 +3,16 @@ import '../styles/hero.css';
 
 export default function Hero() {
   const { t } = useLanguage();
+  const gifSrc = `${import.meta.env.BASE_URL}medias/boucle_hero_gif.gif`;
 
   return (
     <section id="hero" className="hero-section">
       <div className="hero-video-container">
-        <video
+        <img
+          src={gifSrc}
+          alt=""
           className="hero-video"
-          autoPlay
-          loop
-          muted
-          playsInline
-        >
-          <source src={`${import.meta.env.BASE_URL}medias/boucle_hero.mp4`} type="video/mp4" />
-        </video>
+        />
       </div>
       <div className="hero-content">
         <div className="hero-text-container">

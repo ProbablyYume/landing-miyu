@@ -28,6 +28,15 @@ export interface Translations {
     otherChallenges: string;
     watchOnYouTube: string;
   };
+  otherContent: {
+    title: string;
+    videoTag: string;
+    playlistTag: string;
+    categories: {
+      challenges: string;
+      reviews: string;
+    };
+  };
   socials: {
     title: string;
   };
@@ -69,6 +78,15 @@ export const translations: Record<Language, Translations> = {
       otherChallenges: 'Autres challenges',
       watchOnYouTube: 'Voir sur YouTube →',
     },
+    otherContent: {
+      title: 'Mes autres contenus',
+      videoTag: 'Vidéo',
+      playlistTag: 'Playlist',
+      categories: {
+        challenges: 'Challenges',
+        reviews: 'Avis',
+      },
+    },
     socials: {
       title: 'Mes réseaux',
     },
@@ -108,6 +126,15 @@ export const translations: Record<Language, Translations> = {
       otherChallenges: 'Other challenges',
       watchOnYouTube: 'Watch on YouTube →',
     },
+    otherContent: {
+      title: 'My other content',
+      videoTag: 'Video',
+      playlistTag: 'Playlist',
+      categories: {
+        challenges: 'Challenges',
+        reviews: 'Reviews',
+      },
+    },
     socials: {
       title: 'My socials',
     },
@@ -146,6 +173,15 @@ export const translations: Record<Language, Translations> = {
       noHitRuns: 'No-hit runs',
       otherChallenges: 'Otros desafíos',
       watchOnYouTube: 'Ver en YouTube →',
+    },
+    otherContent: {
+      title: 'Mi otro contenido',
+      videoTag: 'Vídeo',
+      playlistTag: 'Lista de reproducción',
+      categories: {
+        challenges: 'Desafíos',
+        reviews: 'Reseñas',
+      },
     },
     socials: {
       title: 'Mis redes',
