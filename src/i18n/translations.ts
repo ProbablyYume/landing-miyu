@@ -44,7 +44,7 @@ export interface Translations {
     home: string;
     currentChallenge: string;
     about: string;
-    otherChallenges: string;
+    otherContent: string;
     socials: string;
     signature: string;
   };
@@ -94,7 +94,7 @@ export const translations: Record<Language, Translations> = {
       home: 'Accueil',
       currentChallenge: 'Challenge en cours',
       about: 'Qui suis-je',
-      otherChallenges: 'Mes autres challenges',
+      otherContent: 'Mes autres contenus',
       socials: 'Mes réseaux',
       signature: 'ProbablyYume© de France avec ❤️',
     },
@@ -142,7 +142,7 @@ export const translations: Record<Language, Translations> = {
       home: 'Home',
       currentChallenge: 'Current Challenge',
       about: 'About Me',
-      otherChallenges: 'Other Challenges',
+      otherContent: 'My other content',
       socials: 'Socials',
       signature: 'ProbablyYume© from France with ❤️',
     },
@@ -190,7 +190,7 @@ export const translations: Record<Language, Translations> = {
       home: 'Inicio',
       currentChallenge: 'Desafío actual',
       about: 'Quién soy',
-      otherChallenges: 'Mis otros desafíos',
+      otherContent: 'Mi otro contenido',
       socials: 'Mis redes',
       signature: 'ProbablyYume© de Francia con ❤️',
     },
