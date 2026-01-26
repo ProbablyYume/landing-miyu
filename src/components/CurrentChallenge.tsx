@@ -38,7 +38,10 @@ export default function CurrentChallenge() {
           />
         </div>
       </div>
-      <h3 className="next-challenge-title">{t.currentChallenge.nextChallenge}</h3>
+      <div className="next-challenges-container">
+        <h3 className="next-challenge-title">{t.currentChallenge.nextChallenge}</h3>
+        <h3 className="next-challenge-title">{t.currentChallenge.nextNoHit}</h3>
+      </div>
     </section>
   );
 }
