@@ -1,8 +1,10 @@
+import { useState, useEffect } from 'react';
 import { useLanguage } from '../i18n/languageContext';
 import '../styles/footer.css';
 
 export default function Footer() {
   const { t } = useLanguage();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -18,22 +20,98 @@ export default function Footer() {
     { id: 'other-content', key: 'otherContent' as const },
   ];
 
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isModalOpen]);
+
+  const handleModalClose = (e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) {
+      setIsModalOpen(false);
+    }
+  };
+
   return (
-    <footer className="footer-section">
-      <div className="footer-container">
-        <nav className="footer-nav">
-          {footerNavItems.map((item) => (
+    <>
+      <footer className="footer-section">
+        <div className="footer-container">
+          <nav className="footer-nav">
+            {footerNavItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className="footer-nav-link"
+              >
+                {t.footer[item.key]}
+              </button>
+            ))}
             <button
-              key={item.id}
-              onClick={() => scrollToSection(item.id)}
+              onClick={() => setIsModalOpen(true)}
               className="footer-nav-link"
             >
-              {t.footer[item.key]}
+              {t.footer.legalNotice}
             </button>
-          ))}
-        </nav>
-        <p className="footer-signature">{t.footer.signature}</p>
-      </div>
-    </footer>
+          </nav>
+          <p className="footer-signature">{t.footer.signature}</p>
+        </div>
+      </footer>
+
+      {isModalOpen && (
+        <div className="legal-modal-overlay" onClick={handleModalClose}>
+          <div className="legal-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button
+              className="legal-modal-close"
+              onClick={() => setIsModalOpen(false)}
+              aria-label="Close"
+            >
+              ×
+            </button>
+            <h2 className="legal-modal-title">{t.legalNotice.title}</h2>
+            <div className="legal-modal-body">
+              <section className="legal-section">
+                <h3 className="legal-section-title">{t.legalNotice.editor.title}</h3>
+                <p className="legal-section-text">{t.legalNotice.editor.name}</p>
+              </section>
+
+              <section className="legal-section">
+                <h3 className="legal-section-title">{t.legalNotice.contact.title}</h3>
+                <p className="legal-section-text">
+                  <a href={`mailto:${t.legalNotice.contact.email}`} className="legal-link">
+                    {t.legalNotice.contact.email}
+                  </a>
+                </p>
+              </section>
+
+              <section className="legal-section">
+                <h3 className="legal-section-title">{t.legalNotice.publisher.title}</h3>
+                <p className="legal-section-text">{t.legalNotice.publisher.name}</p>
+              </section>
+
+              <section className="legal-section">
+                <h3 className="legal-section-title">{t.legalNotice.hosting.title}</h3>
+                <p className="legal-section-text">{t.legalNotice.hosting.description}</p>
+              </section>
+
+              <section className="legal-section">
+                <h3 className="legal-section-title">{t.legalNotice.personalData.title}</h3>
+                <p className="legal-section-text">{t.legalNotice.personalData.description}</p>
+                <p className="legal-section-text">{t.legalNotice.personalData.links}</p>
+              </section>
+
+              <section className="legal-section">
+                <h3 className="legal-section-title">{t.legalNotice.commercial.title}</h3>
+                <p className="legal-section-text">{t.legalNotice.commercial.description}</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 }

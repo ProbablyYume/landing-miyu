@@ -47,6 +47,35 @@ export interface Translations {
     otherContent: string;
     socials: string;
     signature: string;
+    legalNotice: string;
+  };
+  legalNotice: {
+    title: string;
+    editor: {
+      title: string;
+      name: string;
+    };
+    contact: {
+      title: string;
+      email: string;
+    };
+    publisher: {
+      title: string;
+      name: string;
+    };
+    hosting: {
+      title: string;
+      description: string;
+    };
+    personalData: {
+      title: string;
+      description: string;
+      links: string;
+    };
+    commercial: {
+      title: string;
+      description: string;
+    };
   };
 }
 
@@ -97,6 +126,35 @@ export const translations: Record<Language, Translations> = {
       otherContent: 'Mes autres contenus',
       socials: 'Mes réseaux',
       signature: 'ProbablyYume© de France avec ❤️',
+      legalNotice: 'Mentions légales',
+    },
+    legalNotice: {
+      title: 'Mentions légales',
+      editor: {
+        title: 'Éditrice du site',
+        name: 'MiyuValkyrie (pseudonyme)',
+      },
+      contact: {
+        title: 'Contact',
+        email: 'miyuvalkyrie@gmail.com',
+      },
+      publisher: {
+        title: 'Responsable de la publication',
+        name: 'MiyuValkyrie',
+      },
+      hosting: {
+        title: 'Hébergement',
+        description: 'Le site est hébergé par GitHub Pages, service fourni par GitHub, Inc. (États-Unis).',
+      },
+      personalData: {
+        title: 'Données personnelles',
+        description: 'Ce site ne collecte, ne stocke et ne traite aucune donnée personnelle. Aucun cookie, aucun outil de suivi, aucune publicité n\'est utilisé.',
+        links: 'Les liens présents sur le site redirigent vers des plateformes tierces (Twitch, YouTube, réseaux sociaux) disposant de leurs propres politiques de confidentialité.',
+      },
+      commercial: {
+        title: 'Activité commerciale',
+        description: 'Le site n\'a aucune vocation commerciale. Aucun produit ou service n\'est vendu, directement ou indirectement.',
+      },
     },
   },
   en: {
@@ -145,6 +203,35 @@ export const translations: Record<Language, Translations> = {
       otherContent: 'My other content',
       socials: 'Socials',
       signature: 'ProbablyYume© from France with ❤️',
+      legalNotice: 'Legal Notice',
+    },
+    legalNotice: {
+      title: 'Legal Notice',
+      editor: {
+        title: 'Site Editor',
+        name: 'MiyuValkyrie (pseudonym)',
+      },
+      contact: {
+        title: 'Contact',
+        email: 'miyuvalkyrie@gmail.com',
+      },
+      publisher: {
+        title: 'Publication Manager',
+        name: 'MiyuValkyrie',
+      },
+      hosting: {
+        title: 'Hosting',
+        description: 'The site is hosted by GitHub Pages, a service provided by GitHub, Inc. (United States).',
+      },
+      personalData: {
+        title: 'Personal Data',
+        description: 'This site does not collect, store, or process any personal data. No cookies, no tracking tools, no advertising are used.',
+        links: 'The links on the site redirect to third-party platforms (Twitch, YouTube, social networks) with their own privacy policies.',
+      },
+      commercial: {
+        title: 'Commercial Activity',
+        description: 'The site has no commercial purpose. No products or services are sold, directly or indirectly.',
+      },
     },
   },
   es: {
@@ -193,6 +280,35 @@ export const translations: Record<Language, Translations> = {
       otherContent: 'Mi otro contenido',
       socials: 'Mis redes',
       signature: 'ProbablyYume© de Francia con ❤️',
+      legalNotice: 'Aviso legal',
+    },
+    legalNotice: {
+      title: 'Aviso legal',
+      editor: {
+        title: 'Editora del sitio',
+        name: 'MiyuValkyrie (seudónimo)',
+      },
+      contact: {
+        title: 'Contacto',
+        email: 'miyuvalkyrie@gmail.com',
+      },
+      publisher: {
+        title: 'Responsable de la publicación',
+        name: 'MiyuValkyrie',
+      },
+      hosting: {
+        title: 'Alojamiento',
+        description: 'El sitio está alojado por GitHub Pages, servicio proporcionado por GitHub, Inc. (Estados Unidos).',
+      },
+      personalData: {
+        title: 'Datos personales',
+        description: 'Este sitio no recopila, almacena ni procesa ningún dato personal. No se utilizan cookies, herramientas de seguimiento ni publicidad.',
+        links: 'Los enlaces presentes en el sitio redirigen a plataformas de terceros (Twitch, YouTube, redes sociales) con sus propias políticas de privacidad.',
+      },
+      commercial: {
+        title: 'Actividad comercial',
+        description: 'El sitio no tiene ningún propósito comercial. No se venden productos o servicios, directa o indirectamente.',
+      },
     },
   },
 };
