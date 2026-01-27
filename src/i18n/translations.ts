@@ -132,7 +132,7 @@ export const translations: Record<Language, Translations> = {
       title: 'Mentions légales',
       editor: {
         title: 'Éditrice du site',
-        name: 'MiyuValkyrie (pseudonyme)',
+        name: 'MiyuValkyrie (propriétaire) / ProbablyYume (développeur)',
       },
       contact: {
         title: 'Contact',
@@ -209,7 +209,7 @@ export const translations: Record<Language, Translations> = {
       title: 'Legal Notice',
       editor: {
         title: 'Site Editor',
-        name: 'MiyuValkyrie (pseudonym)',
+        name: 'MiyuValkyrie (owner) / ProbablyYume (developer)',
       },
       contact: {
         title: 'Contact',
@@ -286,7 +286,7 @@ export const translations: Record<Language, Translations> = {
       title: 'Aviso legal',
       editor: {
         title: 'Editora del sitio',
-        name: 'MiyuValkyrie (seudónimo)',
+        name: 'MiyuValkyrie (propietaria) / ProbablyYume (desarrollador)',
       },
       contact: {
         title: 'Contacto',

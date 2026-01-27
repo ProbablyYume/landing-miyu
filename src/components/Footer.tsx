@@ -1,10 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../i18n/languageContext';
 import '../styles/footer.css';
 
 export default function Footer() {
   const { t } = useLanguage();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
+  const overlayRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -23,6 +26,7 @@ export default function Footer() {
   useEffect(() => {
     if (isModalOpen) {
       document.body.style.overflow = 'hidden';
+      setIsClosing(false);
     } else {
       document.body.style.overflow = '';
     }
@@ -33,8 +37,18 @@ export default function Footer() {
 
   const handleModalClose = (e: React.MouseEvent) => {
     if (e.target === e.currentTarget) {
-      setIsModalOpen(false);
+      closeModal();
     }
+  };
+
+  const closeModal = () => {
+    setIsClosing(true);
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        setIsModalOpen(false);
+        setIsClosing(false);
+      }, 300);
+    });
   };
 
   return (
@@ -63,11 +77,19 @@ export default function Footer() {
       </footer>
 
       {isModalOpen && (
-        <div className="legal-modal-overlay" onClick={handleModalClose}>
-          <div className="legal-modal-content" onClick={(e) => e.stopPropagation()}>
+        <div 
+          ref={overlayRef}
+          className={`legal-modal-overlay ${isClosing ? 'legal-modal-closing' : ''}`}
+          onClick={handleModalClose}
+        >
+          <div 
+            ref={contentRef}
+            className={`legal-modal-content ${isClosing ? 'legal-modal-closing' : ''}`}
+            onClick={(e) => e.stopPropagation()}
+          >
             <button
               className="legal-modal-close"
-              onClick={() => setIsModalOpen(false)}
+              onClick={closeModal}
               aria-label="Close"
             >
               ×
