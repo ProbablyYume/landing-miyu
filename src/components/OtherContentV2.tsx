@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { useLanguage } from '../i18n/languageContext';
+import { formatDate } from '../utils/dateFormatter';
 import '../styles/otherContentV2.css';
 
 export interface ContentLink {
@@ -222,7 +223,7 @@ export default function OtherContentV2({ games }: OtherContentV2Props) {
                               </div>
                               <div className="content-link-info">
                                 <h5 className="content-link-title">{linkTitle}</h5>
-                                <p className="content-link-date">{link.date}</p>
+                                <p className="content-link-date">{formatDate(link.date, language)}</p>
                                 <span className={`content-link-tag ${link.type}`}>
                                   {link.type === 'video' ? t.otherContent.videoTag : t.otherContent.playlistTag}
                                 </span>
