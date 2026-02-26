@@ -45,6 +45,7 @@ export interface Translations {
     description: string;
     comingSoon: string;
     imageAlt: string;
+    newsletterCta: string;
   };
   footer: {
     home: string;
@@ -135,6 +136,7 @@ export const translations: Record<Language, Translations> = {
         "La marque MiyuValkyrie est en préparation !\n\nDécouvrez bientôt des designs exclusifs sur des vêtements, des mugs et d'autres produits de merchandising.\n\nEnvoi international disponible.",
       comingSoon: "Bientôt disponible",
       imageAlt: "Aperçu de la boutique — bientôt disponible",
+      newsletterCta: "Rejoins la newsletter sur MiyuValkyrie.store",
     },
     footer: {
       home: "Accueil",
@@ -227,6 +229,7 @@ export const translations: Record<Language, Translations> = {
         "The MiyuValkyrie brand is in preparation!\n\nSoon discover exclusive designs on clothing, mugs, and other merchandise.\n\nInternational shipping available.",
       comingSoon: "Coming soon",
       imageAlt: "Shop preview — coming soon",
+      newsletterCta: "Join the newsletter on MiyuValkyrie.store",
     },
     footer: {
       home: "Home",
@@ -319,6 +322,7 @@ export const translations: Record<Language, Translations> = {
         "¡La marca MiyuValkyrie está en preparación!\n\nPronto descubre diseños exclusivos en ropa, tazas y otros productos de merchandising.\n\nEnvío internacional disponible.",
       comingSoon: "Próximamente",
       imageAlt: "Vista previa de la tienda — próximamente",
+      newsletterCta: "Únete al newsletter en MiyuValkyrie.store",
     },
     footer: {
       home: "Inicio",

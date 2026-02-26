@@ -17,6 +17,16 @@ export default function Shop() {
           <p className="shop-description">{t.shop.description}</p>
         </div>
       </div>
+      <div className="shop-cta-wrap">
+        <a
+          href="https://miyuvalkyrie.store"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shop-cta-button"
+        >
+          {t.shop.newsletterCta}
+        </a>
+      </div>
     </section>
   );
 }

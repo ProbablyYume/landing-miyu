@@ -53,6 +53,31 @@
   text-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
 }
 
+.shop-cta-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.shop-cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #d4af37;
+  color: #0a0a0a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.shop-cta-button:hover {
+  background-color: #f4d03f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+}
+
 .shop-coming-soon {
   color: #d4af37;
   font-size: 2rem;
@@ -90,6 +115,11 @@
 
   .shop-description {
     font-size: 1.2rem;
+  }
+
+  .shop-cta-button {
+    font-size: 1rem;
+    padding: 0.9rem 1.5rem;
   }
 
   .shop-coming-soon {
