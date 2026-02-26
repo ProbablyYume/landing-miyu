@@ -1,7 +1,7 @@
-import { useLanguage } from '../i18n/languageContext';
-import '../styles/shop.css';
+import { useLanguage } from "../i18n/languageContext";
+import "../styles/shop.css";
 
-const comingSoonImage = '/medias/comingsoon.jpeg';
+const comingSoonImage = "/medias/comingsoon.jpeg";
 
 export default function Shop() {
   const { t } = useLanguage();
@@ -17,7 +17,6 @@ export default function Shop() {
           <p className="shop-description">{t.shop.description}</p>
         </div>
       </div>
-      <h3 className="shop-coming-soon">{t.shop.comingSoon}</h3>
     </section>
   );
 }
