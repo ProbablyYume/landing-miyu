@@ -20,6 +20,7 @@ export default function Footer() {
     { id: 'hero', key: 'home' as const },
     { id: 'about', key: 'about' as const },
     { id: 'current-challenge', key: 'currentChallenge' as const },
+    { id: 'shop', key: 'shop' as const },
     { id: 'other-content', key: 'otherContent' as const },
   ];
 

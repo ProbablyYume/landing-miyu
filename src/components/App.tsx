@@ -2,6 +2,7 @@ import { LanguageProvider } from '../i18n/languageContext';
 import Hero from './Hero';
 import CurrentChallenge from './CurrentChallenge';
 import About from './About';
+import Shop from './Shop';
 import OtherContentV2 from './OtherContentV2';
 import Footer from './Footer';
 import LanguageSelector from './LanguageSelector';
@@ -17,6 +18,8 @@ export default function App() {
       <About />
       <SectionDivider />
       <CurrentChallenge />
+      <SectionDivider />
+      <Shop />
       <SectionDivider />
       <OtherContentV2 games={otherContentData} />
       <SectionDivider />
