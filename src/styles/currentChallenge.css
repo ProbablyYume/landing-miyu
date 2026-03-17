@@ -62,12 +62,20 @@
   border-radius: 8px;
   font-size: 1.1rem;
   font-weight: 600;
+  height: 54px;
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   transform: translateZ(0);
   will-change: transform;
   box-shadow: 0 4px 15px rgba(145, 70, 255, 0.3);
   width: fit-content;
+}
+
+.challenge-cta-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0.9rem;
   margin-top: 1rem;
+  width: fit-content;
 }
 
 .challenge-cta-button:hover {
@@ -77,6 +85,34 @@
 }
 
 .challenge-cta-button .twitch-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.challenge-cta-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  padding: 0;
+  background-color: #00e701;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateZ(0);
+  will-change: transform;
+  box-shadow: 0 4px 15px rgba(0, 231, 1, 0.25);
+}
+
+.challenge-cta-icon-button:hover {
+  background-color: #00c901;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 231, 1, 0.45);
+}
+
+.challenge-cta-icon-button .kick-icon {
   width: 24px;
   height: 24px;
 }
@@ -153,6 +189,11 @@
 
   .challenge-description {
     font-size: 1rem;
+  }
+
+  .challenge-cta-icon-button {
+    width: 48px;
+    height: 48px;
   }
 
   .next-challenges-container {

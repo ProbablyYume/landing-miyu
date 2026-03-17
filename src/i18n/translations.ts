@@ -2,6 +2,9 @@
 export type Language = "fr" | "en" | "es";
 
 export interface Translations {
+  a11y: {
+    kick: string;
+  };
   hero: {
     title: string;
     subtitle1: string;
@@ -89,6 +92,9 @@ export interface Translations {
 
 export const translations: Record<Language, Translations> = {
   fr: {
+    a11y: {
+      kick: "Kick",
+    },
     hero: {
       title: "MiyuValkyrie",
       subtitle1: "Streamer Twitch",
@@ -182,6 +188,9 @@ export const translations: Record<Language, Translations> = {
     },
   },
   en: {
+    a11y: {
+      kick: "Kick",
+    },
     hero: {
       title: "MiyuValkyrie",
       subtitle1: "Twitch Streamer",
@@ -275,6 +284,9 @@ export const translations: Record<Language, Translations> = {
     },
   },
   es: {
+    a11y: {
+      kick: "Kick",
+    },
     hero: {
       title: "MiyuValkyrie",
       subtitle1: "Streamer Twitch",
