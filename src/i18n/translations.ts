@@ -11,6 +11,11 @@ export interface Translations {
     subtitle2: string;
     subtitle3: string;
     ctaButton: string;
+    liveTitle: string;
+    liveCta: string;
+    liveKickCta: string;
+    showLiveEmbed: string;
+    closeLiveEmbed: string;
   };
   currentChallenge: {
     sectionTitle: string;
@@ -101,6 +106,11 @@ export const translations: Record<Language, Translations> = {
       subtitle2: "Challenge-Runner",
       subtitle3: "No-Hitter",
       ctaButton: "Ma chaîne",
+      liveTitle: "MiyuValkyrie est en direct",
+      liveCta: "Ouvrir sur Twitch",
+      liveKickCta: "Voir sur Kick",
+      showLiveEmbed: "Voir le live",
+      closeLiveEmbed: "Fermer le live",
     },
     currentChallenge: {
       sectionTitle: "Challenge en cours",
@@ -197,6 +207,11 @@ export const translations: Record<Language, Translations> = {
       subtitle2: "Challenge-Runner",
       subtitle3: "No-Hitter",
       ctaButton: "My channel",
+      liveTitle: "MiyuValkyrie is live",
+      liveCta: "Open on Twitch",
+      liveKickCta: "Watch on Kick",
+      showLiveEmbed: "Watch live",
+      closeLiveEmbed: "Close live stream",
     },
     currentChallenge: {
       sectionTitle: "Current Challenge",
@@ -293,6 +308,11 @@ export const translations: Record<Language, Translations> = {
       subtitle2: "Challenge-Runner",
       subtitle3: "No-Hitter",
       ctaButton: "Mi canal",
+      liveTitle: "MiyuValkyrie está en directo",
+      liveCta: "Abrir en Twitch",
+      liveKickCta: "Ver en Kick",
+      showLiveEmbed: "Ver directo",
+      closeLiveEmbed: "Cerrar directo",
     },
     currentChallenge: {
       sectionTitle: "Desafío actual",
